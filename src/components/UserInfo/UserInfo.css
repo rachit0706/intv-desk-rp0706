@@ -1,0 +1,129 @@
+.user-info {
+    margin-top: 1rem;
+}
+
+.user-info header {
+    display: flex;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.avatar-img {
+    height: 15vw;
+    width: 17vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.username-n-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .7rem;
+}
+
+.user-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: .85rem;
+}
+
+.user-bio, .user-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-bio {
+    align-items: flex-start;
+}
+
+.user-stat {
+    align-items: center;
+}
+
+.for-desktop {
+    display: none;
+}
+
+.for-mobile {
+    display: block;
+    margin-top: .5rem;
+}
+
+.for-mobile .user-bio {
+    padding: .75rem;
+    font-size: .85rem;
+}
+
+.connect-btns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.connect-btns button {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: .35rem;
+}
+
+@media screen and (min-width: 700px) {
+    .user-info header {
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .for-desktop {
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .for-mobile {
+        display: none;
+    }
+
+    .user-stats {
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .user-stats, .username-n-btns {
+        width: 60%;
+    }
+
+    .user-stat {
+        flex-direction: row;
+        gap: .25rem;
+    }
+
+    .username-n-btns {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .connect-btns button {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+}
